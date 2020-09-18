@@ -48,6 +48,10 @@ sudo snap install intellij-idea-community --classic
 printf "\n ${RED} ---> instalando KEE PASS... ${NORMAL} \n\n"
 sudo -E apt-get install keepass2
 
+# INSTALL CURL
+printf "\n ${RED} ---> instalando CURL... ${NORMAL} \n\n"
+sudo apt install curl
+
 # INSTALL GIT
 printf "\n ${RED} ---> instalando GIT... ${NORMAL} \n\n"
 sudo -E apt install git-all
@@ -89,6 +93,8 @@ printf "\n ${GREEN} ---> INTELLIJ version: ${NORMAL}\n"
 snap info intellij-idea-community
 printf "\n ${GREEN} ---> KEE PASS version: ${NORMAL}\n"
 keepass2 --version
+printf "\n ${GREEN} ---> CURL version: ${NORMAL}\n"
+curl --version
 printf "\n ${GREEN} ---> GIT version: ${NORMAL}\n"
 git --version
 printf "\n ${GREEN} ---> VIM version: ${NORMAL}\n"
@@ -101,7 +107,7 @@ gitkraken -v
 # SETTING APPS TO FAVOURITES
 printf printf $GREEN
 printf "\n ${GREEN} ---> SETTING APPS TO FAVOURITES... ${NORMAL}\n\n"
-gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'chromium-browser.desktop', 'slack_slack.desktop', 'intellij-idea-community_intellij-idea-community.desktop', 'org.gnome.Nautilus.desktop', 'gitkraken_gitkraken.desktop', 'terminator.desktop', 'kazam.desktop', 'org.gnome.Screenshot.desktop', 'sublime-text_subl.desktop', 'postman_postman.desktop', 'keepass2.desktop', 'gnome-calculator_gnome-calculator.desktop', 'gnome-system-monitor_gnome-system-monitor.desktop', 'org.gnome.Software.desktop', 'gnome-control-center.desktop']"
+gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed s/.$//), 'chromium-browser.desktop', 'slack_slack.desktop', 'intellij-idea-community_intellij-idea-community.desktop', 'org.gnome.Nautilus.desktop', 'terminator.desktop', 'kazam.desktop', 'org.gnome.Screenshot.desktop', 'sublime-text_subl.desktop', 'postman_postman.desktop', 'keepass2.desktop', 'gnome-calculator_gnome-calculator.desktop', 'gnome-system-monitor_gnome-system-monitor.desktop', 'org.gnome.Software.desktop', 'gnome-control-center.desktop']"
 
 # SETTING BOOKMARKS
 printf printf $GREEN
